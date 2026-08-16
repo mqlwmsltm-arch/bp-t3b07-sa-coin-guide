@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b07-sa-coin-guide</title>
+  <meta name="description" content="t3b07-sa-coin-guide에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sangam-room-note.node-link.shop/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Helvetica Neue', sans-serif;
+ background: #0a0a0a;
+ color: #e0d8cc;
+ line-height: 1.7;
+ letter-spacing: -0.01em;
+ -webkit-font-smoothing: antialiased;
+ padding: 0 20px 60px;
+ max-width: 860px;
+ margin: 0 auto;
+ }
+
+ .x-list-r69q-container {
+ border-top: 1px solid #2a2520;
+ border-bottom: 1px solid #2a2520;
+ padding: 28px 0;
+ margin: 40px 0;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 18px 40px;
+ font-size: 0.92rem;
+ color: #b7aa91;
+ }
+
+ .x-list-r69q-container span {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ }
+
+ .x-list-r69q-container span::before {
+ content: '◆';
+ font-size: 0.5rem;
+ color: #c8a45c;
+ }
+
+ .m-top-ryt5-nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 24px 0;
+ border-bottom: 1px solid #1c1915;
+ margin-bottom: 50px;
+ flex-wrap: wrap;
+ gap: 16px;
+ }
+
+ .r-btn-s5az-title {
+ font-size: 1.15rem;
+ font-weight: 600;
+ color: #c8a45c;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ }
+
+ .v-main-xbx4-links {
+ display: flex;
+ gap: 24px;
+ flex-wrap: wrap;
+ }
+
+ .v-main-xbx4-links a {
+ color: #9a8e7f;
+ text-decoration: none;
+ font-size: 0.85rem;
+ font-weight: 500;
+ letter-spacing: 0.02em;
+ transition: color 0.25s;
+ position: relative;
+ }
+
+ .v-main-xbx4-links a:hover {
+ color: #c8a45c;
+ }
+
+ .v-main-xbx4-links a::after {
+ content: '';
+ position: absolute;
+ bottom: -4px;
+ left: 0;
+ width: 0;
+ height: 1px;
+ background: #c8a45c;
+ transition: width 0.3s;
+ }
+
+ .v-main-xbx4-links a:hover::after {
+ width: 100%;
+ }
+
+ .k-btn-yxwu {
+ display: inline-block;
+ border: 1px solid #c8a45c;
+ color: #c8a45c;
+ padding: 8px 20px;
+ font-size: 0.8rem;
+ font-weight: 500;
+ letter-spacing: 0.06em;
+ text-decoration: none;
+ transition: all 0.3s;
+ background: transparent;
+ text-transform: uppercase;
+ }
+
+ .k-btn-yxwu:hover {
+ background: #c8a45c;
+ color: #0a0a0a;
+ }
+
+ .t-head-nf32 {
+ margin-bottom: 40px;
+ position: relative;
+ }
+
+ .t-head-nf32-label {
+ font-size: 0.7rem;
+ text-transform: uppercase;
+ letter-spacing: 0.15em;
+ color: #c8a45c;
+ margin-bottom: 8px;
+ font-weight: 600;
+ }
+
+ .t-head-nf32-headline {
+ font-size: 2.6rem;
+ font-weight: 700;
+ line-height: 1.2;
+ letter-spacing: -0.02em;
+ color: #ebe0cb;
+ margin-bottom: 12px;
+ }
+
+ .t-head {
+ font-size: 1.6rem;
+ font-weight: 700;
+ color: #e8d8b7;
+ margin: 48px 0 16px;
+ letter-spacing: -0.01em;
+ border-left: 3px solid #c8a45c;
+ padding-left: 16px;
+ }
+
+ p {
+ margin-bottom: 1.3rem;
+ color: #c4b9a6;
+ font-size: 0.98rem;
+ line-height: 1.8;
+ }
+
+ .insight-box {
+ background: #141210;
+ border: 1px solid #2a2520;
+ padding: 24px 28px;
+ margin: 32px 0;
+ border-radius: 2px;
+ font-size: 0.88rem;
+ color: #b7aa8a;
+ line-height: 1.9;
+ }
+
+ .insight-box strong {
+ color: #c8a45c;
+ display: block;
+ margin-bottom: 6px;
+ font-size: 0.78rem;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ }
+
+ .grid-2col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 24px;
+ margin: 28px 0;
+ }
+
+ .grid-2col .card {
+ background: #0f0d0b;
+ border: 1px solid #1e1a16;
+ padding: 20px 22px;
+ border-radius: 1px;
+ }
+
+ .grid-2col .card .card-label {
+ font-size: 0.68rem;
+ color: #c8a45c;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ margin-bottom: 8px;
+ }
+
+ .grid-2col .card p {
+ font-size: 0.88rem;
+ margin-bottom: 0;
+ color: #bfb29a;
+ }
+
+ hr {
+ border: none;
+ border-top: 1px solid #1e1a16;
+ margin: 44px 0 28px;
+ }
+
+ @media (max-width: 768px) {
+ body {
+ padding: 0 14px 40px;
+ }
+
+ .m-top-ryt5-nav {
+ flex-direction: column;
+ align-items: flex-start;
+ }
+
+ .v-main-libs-links {
+ gap: 14px;
+ }
+
+ .t-head-nf32-headline {
+ font-size: 1.8rem;
+ }
+
+ .grid-2col {
+ grid-template-columns: 1fr;
+ }
+
+ .x-list-r69q-container {
+ flex-direction: column;
+ gap: 14px;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b07-sa-coin-guide">
+  <meta property="og:description" content="t3b07-sa-coin-guide에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sangam-room-note.node-link.shop/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="t-head-nf32">
+ <div class="t-head-nf32-label">Intel Report</div>
+ <h1 class="t-head-nf32-headline">상암 코인노래방 정보<br>겉치레 말고 내부 구조를 봐라</h1>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0158.html">상암 코인노래방 가이드와 셔츠룸 예약 시 고려해야 할 선택지 분석</a>
+        <p class="post-item__summary">상암 코인노래방 가이드 문서를 찾아보는 방문객들은 가벼운 여가 시간 활용과 조금 더 격식 있는 접대 장소 사이에서 고민하는 경우가 많습니다. 합리적인 가격에 짧은 시간 동안 노래를 부르고 나오는 코</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0452.html">상암 코인노래방 가이드 및 마곡 가라오케 추천정보 안내</a>
+        <p class="post-item__summary">여러분은 평소 노래방을 선택할 때 어떤 기준을 가장 중요하게 생각하시나요? 단순히 가까운 거리를 기준으로 삼는지, 아니면 업체의 평판과 음향 시스템의 품질을 먼저 따져보는지 궁금합니다. 상암 코인노</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0453.html">상암 코인노래방 가이드 따라 살펴보는 마곡 유흥 추천정보 선택법</a>
+        <p class="post-item__summary">상암 코인노래방 가이드 내용을 참고하여 새로운 지역의 업소를 찾을 때 가장 중요한 것은 정보의 투명성입니다. 흔히 인터넷에서 볼 수 있는 광고성 글과 실제 이용객의 경험을 구분하는 작업이 선행되어야</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0454.html">상암 코인노래방 가이드 비교로 확인하는 합정 노래방 추천정보</a>
+        <p class="post-item__summary">상암 코인노래방 가이드 원리를 적용하면 대규모 시설과 소규모 개인 업소 사이의 차이를 명확히 구분할 수 있습니다. 노래방 선택에 있어 가장 고민되는 요소는 결국 시간 대비 가격 효율성입니다. 어떤 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0455.html">상암 코인노래방 가이드 기반의 연남 클럽 추천정보 예약 전략</a>
+        <p class="post-item__summary">상암 코인노래방 가이드 관습에 익숙한 이들이 가장 흔히 겪는 실수는 예약 절차를 간과하는 것입니다. 소규모 업소와 달리 클럽은 인원과 시간, 좌석 배치에 따라 예약 방식이 복잡하게 운영됩니다. 사전</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0456.html">상암 코인노래방 가이드 확인사항으로 본 합정 셔츠룸 추천정보</a>
+        <p class="post-item__summary">상암 코인노래방 가이드 작성 시 중요하게 다뤄지는 체크리스트는 시설의 접근성과 운영 환경입니다. 셔츠룸과 같은 전문적인 업소를 찾을 때도 이러한 확인 항목을 활용하면 실패 확률을 크게 줄일 수 있습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0457.html">상암 코인노래방 가이드 활용해 찾는 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">갑작스럽게 잡힌 비즈니스 미팅이나 저녁 모임 후 마땅한 장소를 찾지 못해 당황하는 경우가 많습니다. 상암 코인노래방 가이드 내용을 참고하여 주변 유흥 시설을 살피는 이들도 늘고 있습니다. 하지만 정</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0458.html">상암 코인노래방 가이드 참고하는 상수 마사지 추천정보 안내</a>
+        <p class="post-item__summary">많은 사람이 마사지 샵은 오직 피로가 극에 달했을 때만 찾아야 하는 곳이라 생각하곤 합니다. 심지어 상암 코인노래방 가이드 같은 정보성 글을 읽으며 문화 활동만 계획하고, 정작 본인의 건강 관리에는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0459.html">상암 코인노래방 가이드 이용자가 만족할 망원 노래방 추천정보</a>
+        <p class="post-item__summary">즐거운 모임을 위해서는 노래방 선정 시 갖추어야 할 충족 조건이 많습니다. 단순히 기계가 최신형인 것뿐만 아니라 공간의 넓이, 음향 시설의 상태, 그리고 접근성까지 고려해야 합니다. 상암 코인노래방</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0460.html">상암 코인노래방 가이드 정보 확인하고 찾는 홍대 노래방 추천정보</a>
+        <p class="post-item__summary">여러분은 홍대 거리를 걷다가 수많은 노래방 간판을 마주할 때 어떤 기준으로 업체를 선택하시나요? 상암 코인노래방 가이드 정보를 익히 알고 있는 분들이라면 가격뿐만 아니라 시설의 노후도나 기기의 반응</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0461.html">상암 코인노래방 가이드 활용해 공덕 셔츠룸 추천정보 확인하기</a>
+        <p class="post-item__summary">일상의 스트레스를 풀기 위해 상암 코인노래방 가이드를 찾다가 더 깊은 밤의 문화를 탐색하게 되는 경우가 많습니다. 특히 공덕 지역으로 이동하면 그 분위기는 사뭇 달라지며, 새로운 활력을 찾는 이들이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0462.html">상암 코인노래방 가이드 보며 비교하는 연남 유흥 추천정보 판단 기준</a>
+        <p class="post-item__summary">단순히 짧은 시간 노래를 즐기는 상암 코인노래방 가이드와 달리, 연남 유흥은 훨씬 복합적인 요소를 갖추고 있습니다. 두 선택지 사이에서 고민할 때 가장 먼저 고려해야 할 점은 본인이 추구하는 목적이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-001-bwdmiy.html">상암 코인노래방 가이드 경험자에게 물어본 현실적인 판단 기준</a>
+        <p class="post-item__summary">상암 지역에서 코인노래방을 방문하려는 분들은 단순히 가까운 곳을 찾기보다 시설의 쾌적함과 음향 설비를 우선적으로 고려해야 합니다. 디지털 미디어 단지라는 특성상 퇴근 시간이나 점심시간 직후에는 이용</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">상암 코인노래방 가이드</a>
+        <p class="post-item__summary">상암 지역의 코인노래방을 이용할 때는 각 매장의 운영 방식과 시설 상태를 미리 파악하는 것이 중요합니다. 일반적으로 코인노래방은 시간 단위 요금제로 운영되며, 노래방 내부의 음향 설비와 좌석 배치,</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">상암 코인노래방 가이드</a>
+        <p class="post-item__summary">코인노래방은 개인이나 소규모 그룹이 부담 없이 노래방 공간을 대여해 즐길 수 있는 공간입니다. 특히 상암 지역에서는 교통 접근성과 주변 편의시설이 잘 갖춰진 곳이 많아 많은 이들에게 이용되고 있습니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">상암 코인노래방 가이드</a>
+        <p class="post-item__summary">서울 마포구 상암동은 대규모 아파트 단지와 업무 지구, 방송 시설이 밀집한 지역으로, 야간에도 많은 사람이 활발히 활동합니다. 이에 따라 주변에는 다양한 종류의 코인노래방이 위치해 있으며, 이용객의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">상암 코인노래방 가이드</a>
+        <p class="post-item__summary">상암 지역 코인노래방을 알아볼 때 가장 먼저 고려해야 할 요소는 접근성과 공간 활용성입니다. 업무 지구 근처에 위치하는 경우가 많아 퇴근 후 빠르게 이동할 수 있는 곳이 선호되며, 개인이나 소규모 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">상암 코인노래방 가이드</a>
+        <p class="post-item__summary">코인노래방은 대중교통 접근성이 좋고 비용 부담이 적어 많은 사람이 찾습니다. 이 문서에서는 상암 지역 코인노래방을 알아볼 때 참고할 수 있는 기본 정보를 안내합니다. 위치 선정, 이용 시간, 시설 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
